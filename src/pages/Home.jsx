@@ -10,12 +10,12 @@ function Home() {
           <p className="mt-6 text-xl text-gray-400">
             Building focused tools for intentional living.
           </p>
-          <a
-            href="/#apps"
-            className="mt-10 inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-500 transition-colors"
+          <button
+            onClick={() => document.getElementById('apps')?.scrollIntoView({ behavior: 'smooth' })}
+            className="mt-10 inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-indigo-500 transition-colors cursor-pointer"
           >
             See Our Apps
-          </a>
+          </button>
         </div>
       </section>
 

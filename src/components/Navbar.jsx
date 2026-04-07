@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom'
 
+function scrollTo(id) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+}
+
 function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-gray-950 border-b border-gray-800">
@@ -8,9 +12,9 @@ function Navbar() {
           Farzan Software Solutions
         </Link>
         <div className="flex gap-6 text-sm font-medium text-gray-400">
-          <a href="/#about" className="hover:text-indigo-400 transition-colors">About</a>
-          <a href="/#apps" className="hover:text-indigo-400 transition-colors">Apps</a>
-          <a href="/#contact" className="hover:text-indigo-400 transition-colors">Contact</a>
+          <button onClick={() => scrollTo('about')} className="hover:text-indigo-400 transition-colors cursor-pointer">About</button>
+          <button onClick={() => scrollTo('apps')} className="hover:text-indigo-400 transition-colors cursor-pointer">Apps</button>
+          <button onClick={() => scrollTo('contact')} className="hover:text-indigo-400 transition-colors cursor-pointer">Contact</button>
         </div>
       </div>
     </nav>
