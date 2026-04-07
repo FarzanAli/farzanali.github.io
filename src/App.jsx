@@ -6,7 +6,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-gray-900">
+    <div className="min-h-screen flex flex-col bg-gray-950 text-gray-100">
       <Navbar />
       <main className="flex-1">
         <Routes>
